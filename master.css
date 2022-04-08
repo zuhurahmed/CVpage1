@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0px;
+  background-color: #fcd9dc;
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  max-width: 200px;
+  background-color: #bb682d;S
+  position: fixed;
+  height: 90%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: rgb(195, 188, 60);
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: #5343406e;
+  color: white;
+  font-weight: bold;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #5343404a;
+}
+
+.not-active {
+  background-color: #e99c1f !important;
+}
+
+
+.content {
+  margin-left: 200px;
+  padding: 16px;
+  height: 100vh;
+  max-width: 800px;
+}
+
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.horizontal-center {
+  left: 25%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+ul {
+  padding-left: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+.contact-images {
+  height: 15px;
+  width: 15px;
+}
+
+h1 {
+  color: #BB9981;
+}
+
+h2 {
+  font-weight: bold !important;
+}
+
+#introduction, #skills, #education, #contact {
+  float: left;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+#introduction, #skills, #education {
+  height: 100%;
+}
+
+
+.w3-grey {
+  height: 24px;
+}
+
+#Somali-bar, #java-bar {
+  width: 85%;
+}
+
+#dutch-bar {
+  width: 80%;
+}
+
+#english-bar, #sql-bar {
+  width: 60%;
+}
+
+#html-bar, #css-bar {
+  width: 55%;
+}
+
+
+@media screen and (max-width: 600px) {
+  .content{
+    margin-left: 0;
+    padding-top: 60px;
+  }
+
+  .sidebar, #title-extra {
+    width: 100%;
+    height: auto;
+    position: relative;
+    float: left;
+    display: block;
+    max-width: none;
+  }
+
+  #title-extra {
+    width: 20%;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .sidebar a {
+    float: left;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .content {
+    padding-top: 220px;
+    text-align: center;
+  }
+
+  #title-extra {
+    width: auto;
+  }
+
+  .introduction {
+    width: 100%;
+  }
+
+  .sidebar a, #title-extra{
+    text-align: center;
+    float: none;
+  }
+
+  .horizontal-center {
+    left: 0;
+  }
+}
